@@ -16,4 +16,5 @@ jobs:
         python-version: "3.7"
     - name: Run Python tests 
       run: |
+        sudo python3 -m pip install protobuf
         sudo python3 -m unittest tests.test_dnstap
