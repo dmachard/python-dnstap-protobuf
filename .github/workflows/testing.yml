@@ -17,5 +17,6 @@ jobs:
 
     - name: Run Python tests 
       run: |
-        sudo python3 -m pip install protobuf
+        pip uninstall protobuf python3-protobuf
+        sudo python3 -m pip install --upgrade protobuf
         sudo python3 -m unittest tests.test_dnstap
