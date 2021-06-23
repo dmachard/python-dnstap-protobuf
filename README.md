@@ -63,3 +63,14 @@ dnstap.message.socket_family = dnstap_pb.dnstap_pb2._SOCKETFAMILY.values_by_name
 # serialize the dnstap message to binary
 payload = dnstap.SerializeToString()
 ```
+
+# Development
+
+dnstap_pb2 generation guideline
+ 
+```
+wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip
+python3 -m pip install protobuf
+bin/protoc --python_out=. dnstap.proto
+```
