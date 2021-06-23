@@ -66,11 +66,25 @@ payload = dnstap.SerializeToString()
 
 # Development
 
-dnstap_pb2 generation guideline
+dnstap_pb2 file generation guideline
  
+Download dnstap.proto from https://github.com/dnstap/dnstap.pb
+
 ```
 wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
+```
+
+Download protoc
+
+```
 wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-linux-x86_64.zip
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.17.3/protoc-3.17.3-linux-x86_64.zip
+unzip protoc-3.17.3-linux-x86_64.zip
+```
+
+Generate proto
+
+```
 python3 -m pip install protobuf
 bin/protoc --python_out=. dnstap.proto
 ```
