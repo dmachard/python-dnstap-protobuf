@@ -77,8 +77,8 @@ wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
 Download protoc
 
 ```
-wget https://github.com/protocolbuffers/protobuf/releases/download/v3.17.3/protoc-3.17.3-linux-x86_64.zip
-unzip protoc-3.17.3-linux-x86_64.zip
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.18.0/protoc-3.18.0-linux-x86_64.zip
+unzip protoc-3.18.0-linux-x86_64.zip
 ```
 
 Generate proto
