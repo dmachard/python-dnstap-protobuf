@@ -16,6 +16,9 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install twine jinja2
 
+    - id: pkg_version
+      run: echo "##[set-output name=data;]$(echo ${{ github.event.release.tag_name }} | cut -c2-)"
+
     - name: Build Python package
       run: |
         python -c 'import jinja2;jinja2.Template(open("setup.j2").read()).stream(version="${{ steps.pkg_version.outputs.data }}").dump("setup.py")'
