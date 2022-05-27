@@ -83,7 +83,7 @@ wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
 Download protoc
 
 ```
-export VER=3.18.0
+export VER=21.0
 wget https://github.com/protocolbuffers/protobuf/releases/download/v$VER/protoc-$VER-linux-x86_64.zip
 unzip protoc-$VER-linux-x86_64.zip
 ```
