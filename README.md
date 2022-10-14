@@ -1,7 +1,7 @@
 # Dnstap Protocol Buffers implementation in Python
 
 Dnstap Protocol Buffers implementation in Python, more informations on dnstap http://dnstap.info/.
-This library is based on the following [protocol buffers schema](https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto).
+This library is based on the following [protocol buffers schema](https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto) from github https://github.com/dnstap/dnstap.pb
 
 ## Installation
 
